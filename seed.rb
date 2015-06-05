@@ -4,12 +4,8 @@ types = [
 	'Ice', 'Ghost', 'Electric'
 	]
 
-# types.each { |type| Type.create(name: type) }
-	# counter = 0
-	# types.each do |type| 
-	# 	counter += 1
-	# 	puts "#{counter}. #{type}" 
-	# end
+types.each { |type| Type.create(name: type) }
+
 
 abilities = [ 
 	'Adaptability', 'Aerilate', 'Aftermath', 'Air Lock', 'Analytic',
@@ -43,64 +39,40 @@ abilities = [
 	'Vital Spirit', 'Volt Absorb', 'Water Absorb', 'Water Veil', 'Weak Armor', 'White Smoke', 
 	'Wonder Guard', 'Wonder Skin', 'Zen Mode'
 ]
-# abilities.each {|ability| Ability.create(name: ability)}
 
-# end
-# p abilities[101]
+abilities.each {|ability| Ability.create(name: ability)}
 
-# puts
-# counter_two = 0
-
-# abilities.each do |ability| 
-# 	counter_two += 1
-# 	puts "#{counter_two}. #{ability}"
-# end
-types.each_with_index do |value, index|
-	p index if value == 'Ground'
-end
-abilities.each_with_index do |value, index|
-	p index if value == 'Sand Veil'
-end
-# Pokemon.create(name: 'Bulbasaur', evolves_at: 16, type_id: [1, 2], ability_id: 102)
-# Pokemon.create(name: 'Ivysaur', evolves_at: 32, type_id: [1, 2], ability_id: 102)
-# Pokemon.create(name: 'Venasaur', evolves_at: nil, type_id: [1, 2], ability_id: 102)
-# Pokemon.create(name: 'Charmander', evolves_at: 16, type_id: 4, ability_id: 14)
-# Pokemon.create(name: 'Charmeleon', evolves_at: 36, type_id: 4, ability_id: 14)
-# Pokemon.create(name: 'Charizard', evolves_at: nil, type_id: 4, ability_id: 102)
-# Pokemon.create(name: 'Squirtle', evolves_at: 16, type_id: 6, ability_id: 170)
-# Pokemon.create(name: 'Wartortle', evolves_at: 36, type_id: 6, ability_id: 170)
-# Pokemon.create(name: 'Blastoise', evolves_at: nil, type_id: 6, ability_id: 170)
-# Pokemon.create(name: 'Caterpie', evolves_at: 7, type_id: 5, ability_id: 137)
-# Pokemon.create(name: 'Metapod', evolves_at: 10, type_id: 5, ability_id: 134)
-# Pokemon.create(name: 'Butterfree', evolves_at: nil, type_id: [5,3], ability_id: 22)
-# Pokemon.create(name: 'Weedle', evolves_at: 7, type_id: [2, 5], ability_id: 137)
-# Pokemon.create(name: 'Kakuna', evolves_at: 10, type_id: [2, 5], ability_id: 134)
-# Pokemon.create(name: 'Beedrill', evolves_at: nil, type_id: [2, 5], ability_id: 159)
-# Pokemon.create(name: 'Pidgey', evolves_at: 18, type_id: 7, ability_id: 74)
-# Pokemon.create(name: 'Pidgeotto', evolves_at: 36, type_id: 7, ability_id: 74)
-# Pokemon.create(name: 'Pidgeot', evolves_at: nil, type_id: 7, ability_id: 22)
-# Pokemon.create(name: 'Rattata', evolves_at: 20, type_id: 7, ability_id: 125)
-# Pokemon.create(name: 'Raticate', evolves_at: nil, type_id: 7, ability_id: 125)
-# Pokemon.create(name: 'Spearow', evolves_at: 20, type_id: [3, 7], ability_id: 74)
-# Pokemon.create(name: 'Fearow', evolves_at: nil, type_id: [3, 7], ability_id: 74)
-# Pokemon.create(name: 'Ekans', evolves_at: nil, type_id: 2, ability_id: 70)
-# Pokemon.create(name: 'Arbok', evolves_at: nil, type_id: 2, ability_id: 70)
-# Pokemon.create(name: 'Pikachu', evolves_at: 'Thunderstone', type_id: 15, ability_id: 150)
-# Pokemon.create(name: 'Raichu', evolves_at: nil, type_id: 15, ability_id: 150)
-# Pokemon.create(name: 'Sandshrew', evolves_at: 22, type_id: 8, ability_id: 129)
-# Pokemon.create(name: 'Sandslash', evolves_at: nil, type_id: 8, ability_id: 129)
-# Pokemon.create(name: 'Nidoran', evolves_at: 36, type_id: 7, ability_id: 74)
-# Pokemon.create(name: 'Nidorina', evolves_at: nil, type_id: 7, ability_id: 22)
-# Pokemon.create(name: 'Nidoqueen', evolves_at: 20, type_id: 7, ability_id: 125)
-# Pokemon.create(name: 'Raticate', evolves_at: nil, type_id: 7, ability_id: 125)
-# Pokemon.create(name: 'Spearow', evolves_at: 20, type_id: [3, 7], ability_id: 74)
-# Pokemon.create(name: 'Fearow', evolves_at: nil, type_id: [3, 7], ability_id: 74)
-# Pokemon.create(name: 'Ekans', evolves_at: nil, type_id: 2, ability_id: 70)
-# Pokemon.create(name: 'Arbok', evolves_at: nil, type_id: 2, ability_id: 70)
-# Pokemon.create(name: 'Pikachu', evolves_at: 'Thunderstone', type_id: 15, ability_id: 150)
-# Pokemon.create(name: 'Raichu', evolves_at: nil, type_id: 15, ability_id: 150)
-# Pokemon.create(name: 'Sandshrew', evolves_at: 22, type_id: 8, ability_id: 129)
-# Pokemon.create(name: 'Sandslash', evolves_at: nil, type_id: 8, ability_id: 129)
+Pokemon.create(name: 'Bulbasaur', evolves_at: 16, type_id: [1, 2], ability_id: 102)
+Pokemon.create(name: 'Ivysaur', evolves_at: 32, type_id: [1, 2], ability_id: 102)
+Pokemon.create(name: 'Venasaur', evolves_at: nil, type_id: [1, 2], ability_id: 102)
+Pokemon.create(name: 'Charmander', evolves_at: 16, type_id: 4, ability_id: 14)
+Pokemon.create(name: 'Charmeleon', evolves_at: 36, type_id: 4, ability_id: 14)
+Pokemon.create(name: 'Charizard', evolves_at: nil, type_id: 4, ability_id: 102)
+Pokemon.create(name: 'Squirtle', evolves_at: 16, type_id: 6, ability_id: 170)
+Pokemon.create(name: 'Wartortle', evolves_at: 36, type_id: 6, ability_id: 170)
+Pokemon.create(name: 'Blastoise', evolves_at: nil, type_id: 6, ability_id: 170)
+Pokemon.create(name: 'Caterpie', evolves_at: 7, type_id: 5, ability_id: 137)
+Pokemon.create(name: 'Metapod', evolves_at: 10, type_id: 5, ability_id: 134)
+Pokemon.create(name: 'Butterfree', evolves_at: nil, type_id: [5,3], ability_id: 22)
+Pokemon.create(name: 'Weedle', evolves_at: 7, type_id: [2, 5], ability_id: 137)
+Pokemon.create(name: 'Kakuna', evolves_at: 10, type_id: [2, 5], ability_id: 134)
+Pokemon.create(name: 'Beedrill', evolves_at: nil, type_id: [2, 5], ability_id: 159)
+Pokemon.create(name: 'Pidgey', evolves_at: 18, type_id: 7, ability_id: 74)
+Pokemon.create(name: 'Pidgeotto', evolves_at: 36, type_id: 7, ability_id: 74)
+Pokemon.create(name: 'Pidgeot', evolves_at: nil, type_id: 7, ability_id: 22)
+Pokemon.create(name: 'Rattata', evolves_at: 20, type_id: 7, ability_id: 125)
+Pokemon.create(name: 'Raticate', evolves_at: nil, type_id: 7, ability_id: 125)
+Pokemon.create(name: 'Spearow', evolves_at: 20, type_id: [3, 7], ability_id: 74)
+Pokemon.create(name: 'Fearow', evolves_at: nil, type_id: [3, 7], ability_id: 74)
+Pokemon.create(name: 'Ekans', evolves_at: nil, type_id: 2, ability_id: 70)
+Pokemon.create(name: 'Arbok', evolves_at: nil, type_id: 2, ability_id: 70)
+Pokemon.create(name: 'Pikachu', evolves_at: 'Thunderstone', type_id: 15, ability_id: 150)
+Pokemon.create(name: 'Raichu', evolves_at: nil, type_id: 15, ability_id: 150)
+Pokemon.create(name: 'Sandshrew', evolves_at: 22, type_id: 8, ability_id: 129)
+Pokemon.create(name: 'Sandslash', evolves_at: nil, type_id: 8, ability_id: 129)
+Pokemon.create(name: 'Nidoran', evolves_at: 36, type_id: 7, ability_id: 74)
+Pokemon.create(name: 'Nidorina', evolves_at: nil, type_id: 7, ability_id: 22)
+Pokemon.create(name: 'Nidoqueen', evolves_at: 20, type_id: 7, ability_id: 125)
 
 
 
