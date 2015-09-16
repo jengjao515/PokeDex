@@ -4,6 +4,10 @@ _PokeDex_ was a small terminal application created for the last day of Phase 1 a
 
 ![alt text](terminal_screenshot.png "Terminal Screenshot")
 
+#### Created On
+```
+June 5, 2015
+```
 
 ## How it Works
 ```
@@ -16,4 +20,9 @@ _PokeDex_ was a small terminal application created for the last day of Phase 1 a
 # Technologies
 ```
 * Active Record
+```
+
+## Notes
+```
+* The PokeDex only contains the first generation (150) of Pokemon. 
 ```
